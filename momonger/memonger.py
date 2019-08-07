@@ -9,7 +9,7 @@ from .checkpoint import checkpoint
 
 
 def reforwad_momentum_fix(origin_momentum):
-    return (1 - sqrt(1 - origin_momentum))
+    return (1 + sqrt(1 - origin_momentum))
 
 
 class SublinearSequential(nn.Sequential):
